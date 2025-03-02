@@ -51,6 +51,7 @@ body ::before{
 #formulario input {
   margin-top: 15px;
   width: 300px;
+  
   height: 35px;
   border-radius: 12px;
   padding-left: 5px;
@@ -62,7 +63,7 @@ body ::before{
 #formulario input[type="text"]:focus,
 input[type="password"]:focus {
   background-color: rgb(44, 43, 43);
-  color: rgb(255, 255, 255);
+  color: rgb(210, 206, 206);
   border: none;
   outline: none;
   transform: scaleX(1.1);
