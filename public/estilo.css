@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0px;
   padding: 0px;
@@ -15,6 +16,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+body ::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2 );
+  z-index: -1;
 }
 #formulario {
   background-color: rgb(83, 81, 81);
@@ -27,6 +39,14 @@ body {
   height: 390px;
   margin: 0 auto;
   border-radius: 15px;
+}#formulario{
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(108, 100, 89, 0.5);
+  
 }
 #formulario input {
   margin-top: 15px;
@@ -35,17 +55,21 @@ body {
   border-radius: 12px;
   padding-left: 5px;
   border: none;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
   transition: 0.5s ease;
 }
 #formulario input[type="text"]:focus,
 input[type="password"]:focus {
-  background-color: rgb(55, 51, 51);
-  color: rgb(202, 202, 202);
+  background-color: rgb(44, 43, 43);
+  color: rgb(255, 255, 255);
   border: none;
   outline: none;
+  transform: scaleX(1.1);
 }
 #formulario label {
-  border: 3px solid aqua;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
   margin-right: 260px;
 }
 #formulario label[for="senha"] {
