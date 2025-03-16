@@ -7,12 +7,13 @@
     <title>login</title>
   </head>
   <body> 
-    <form  id="formulario">
+    <form method="post" id="formulario">
       <h3 class="log">Faça seu Login</h3>
       <label for="usuario">Usuario</label>
       <input
         required
         placeholder="Digite seu usuario"
+        name="usulog"
         id="usuario"
         type="text"
       />
@@ -22,10 +23,13 @@
         required
         placeholder="Digite sua senha"
         type="password"
+        name="senhalog"
         id="senha"
       />
 
       <input type="submit" />
     </form>
+    <a href="/">Não tem uma senha?</a>
+    <script src="script.js"></script>
   </body>
 </html>
