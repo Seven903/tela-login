@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="/estilo.css" />
 </head>
 <body>
-    <h1>Faça seu cadastro</h1>
+  <form id="formulario">
+    <h3 class="log">Faça seu cadastro</h3>
+    <label for="uso">Usuário</label>
+    <input type="text" id="uso" placeholder="Nome do usuário" required />
 
-    <form  method="post">
-        <label for="">usuario</label>
-        <input type="text" name="nome" placeholder="Nome do usuario">
-        <label for="">Senha</label>
-        <input type="password" name="senha" placeholder="Crie sua senha" >
+    <label for="sen">Senha</label>
+    <input type="password"  id="sen" placeholder="Crie sua senha" required />
 
-        <input type="submit" value="cadastrar-se">
-    </form>
-    <a href="login">Ja tem uma conta?</a>
+    <input type="submit" value="Cadastrar-se" />
+  </form>
+
+  <a href="login">Já tem uma conta?</a>
+
+  <script src="/script.js"></script>
 </body>
 </html>
