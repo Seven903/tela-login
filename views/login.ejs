@@ -1,35 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="/estilo.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
+    <title>Login</title>
   </head>
-  <body> 
+  <body>
     <form method="post" id="formulario">
       <h3 class="log">Faça seu Login</h3>
-      <label for="usuario">Usuario</label>
-      <input
-        required
-        placeholder="Digite seu usuario"
-        name="usulog"
-        id="usuario"
-        type="text"
-      />
-
+      <label for="usuario">Usuário</label>
+      <input id="usuario" type="text" required />
       <label for="senha">Senha</label>
-      <input
-        required
-        placeholder="Digite sua senha"
-        type="password"
-        name="senhalog"
-        id="senha"
-      />
-
-      <input type="submit" />
+      <input id="senha" type="password" required />
+      <input type="submit" value="Entrar" />
     </form>
-    <a href="/">Não tem uma senha?</a>
-    <script src="script.js"></script>
+    <a href="/cadastro">Não tem uma conta?</a>
+    <script src="/login.js"></script>
   </body>
 </html>
+
+
+

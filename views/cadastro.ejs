@@ -2,24 +2,19 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cadastro</title>
   <link rel="stylesheet" href="/estilo.css" />
 </head>
 <body>
   <form id="formulario">
-    <h3 class="log">Faça seu cadastro</h3>
+    <h3 class="log">Cadastro</h3>
     <label for="uso">Usuário</label>
-    <input type="text" id="uso" placeholder="Nome do usuário" required />
-
+    <input type="text" id="uso" required />
     <label for="sen">Senha</label>
-    <input type="password"  id="sen" placeholder="Crie sua senha" required />
-
-    <input type="submit" value="Cadastrar-se" />
+    <input type="password" id="sen" required />
+    <input type="submit" value="Cadastrar" />
   </form>
-
-  <a href="login">Já tem uma conta?</a>
-
-  <script src="/script.js"></script>
+  <a href="/login">Já tem uma conta?</a>
+  <script src="/cadastro.js"></script>
 </body>
 </html>

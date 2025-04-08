@@ -4,7 +4,7 @@ const db = new sqlite3.Database("banco.db");
 db.serialize(() => {
   db.run(`CREATE TABLE IF NOT EXISTS usuarios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    usuario TEXT,
+    usuario TEXT UNIQUE,
     senha TEXT
   )`);
 });
