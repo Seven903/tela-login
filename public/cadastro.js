@@ -1,20 +1,14 @@
-document.querySelector("#formulario").addEventListener("submit", (e) => {
-  e.preventDefault();
 
-  const uso = document.querySelector("#uso").value;
-  const sen = document.querySelector("#sen").value;
+document.querySelector("#formulario").addEventListener("submit", () => {
+  let usuario = document.querySelector("#uso").value;
+  let senha = document.querySelector("#sen").value;
 
-  fetch("/cadastro", {
+  fetch("/", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ uso, sen }),
+    headers: { "Content-type": "application/json" },
+    body: JSON.stringify({ usuario, senha }),
   })
-    .then(res => res.json())
-    .then(data => {
-      if (data.msg === "Cadastro realizado com sucesso") {
-        window.location.href = "/login";
-      } else {
-        alert(data.msg);
-      }
-    });
+    .then((res) => res.json)
+    .then((data) => console.log("Dados enviados com sucesso", data))
+    .catch((err) => console.error(err.message));
 });
